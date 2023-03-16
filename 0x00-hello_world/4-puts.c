@@ -1,9 +1,14 @@
 #include <stdio.h>
 
 /**
+ * main - our fucntion/entry point
  *
- * this a program in C that print with puts
- */
+ * Description: a C program that prints with puts function
+ *
+ * Return: Always 0 integer
+ * Return: Always 0 integer
+*/
+
 int main(void)
 {
 	puts "\"Programming is like building a multilingual puzzle";
