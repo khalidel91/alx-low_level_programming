@@ -10,7 +10,7 @@
 int main(void)
 
 {
-	int i, j;
+	int i, j, k, l;
 
 	for (i = '0'; i <= '9'; ++i)
 	{
@@ -27,6 +27,8 @@ int main(void)
 				putchar(l);
 				putchar(',');
 				putchar(' ');
+				}
+			}
 		}
 	}
 	putchar('\n');
