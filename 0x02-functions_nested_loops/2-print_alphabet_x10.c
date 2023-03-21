@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* rint_alphabet_x10 - our fucntion/entry point
+* print_alphabet_x10 - our fucntion/entry point
 *
 * Description: 'a C program that prints alphabet'
 *
