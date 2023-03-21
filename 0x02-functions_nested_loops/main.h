@@ -1,18 +1,13 @@
-#include <stdio.h>
+#include <unistd.h>
+
 /**
-* main - our fucntion/entry point
-*
-* Description: 'a C program that prints alphabet'
-*
-* Return: Always 0 integer
-*/
-int main(void)
-
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _putchar(char c)
 {
-	char ch;
-
-	for (ch = 'a'; ch <= 'z'; ++ch)
-	putchar(ch);
-	putchar('\n');
-	return (0);
+	return (write(1, &c, 1));
 }
