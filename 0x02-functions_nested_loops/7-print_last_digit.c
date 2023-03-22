@@ -1,27 +1,17 @@
 #include "main.h"
-/**
- * print_last_digit - entrypoint
- *
- * @r: the num to be check
- *
- * Description: function that print the last digit
- *
- * Return: the last digit
- */
 
-int print_last_digit(int r)
+#define ABS(x) ((x) < 0 ? -(x) : (x))
+
+/**
+ * print_last_digit - prints the last digit of a number
+ *
+ * @n: number to be checked
+ *
+ * Return: last digit of n
+*/
+int print_last_digit(int n)
 {
-	if (r >= 0)
-	{
-		r = r % 10;
-		_putchar('0' + r);
-	return (r);
-	}
-	else
-	{
-	r = -1 * r;
-	r = r % 10;
-	_putchar('0' + r);
-	return (r);
-	}
+int last_digit = ABS(n % 10);
+_putchar(last_digit + '0');
+return (last_digit);
 }
