@@ -1,17 +1,17 @@
 #include <stdio.h>
 /**
- * main - entrypoint
- *
- * 
- *
- * Description: function check if a number is greater or less or equal to 0
- *
- * Return: 1 mean greater & -1 mean less
- */
+* main - entrypoint
+*
+*
+*
+*
+* Return: return always 0
+*/
 
 int  main(void)
 {
 	int sum, i;
+
 	sum = 0;
 	for (i = 0; i < 1024; i++)
 	{
@@ -20,6 +20,6 @@ int  main(void)
 	else if (i % 5 == 0)
 		sum = sum + i;
 	}
-	printf("%d", sum);
+	printf("%d \n", sum);
 return (0);
 }
