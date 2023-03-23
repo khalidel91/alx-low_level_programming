@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * times_table - prints the table nine time, starting with 0
- *
+ * print_times_table - prints the table nine time, starting with 0
+ * @n : dimension of table
  * Return: void
 */
 void print_times_table(int n)
@@ -36,9 +36,9 @@ if (n <= 15 && n >= 0)
 			else
 			{
 				_putchar(',');
-                                _putchar(' ');
-                                _putchar(k / 100 + '0');
-                                _putchar((k % 100) / 10 + '0');
+				_putchar(' ');
+				_putchar(k / 100 + '0');
+				_putchar((k % 100) / 10 + '0');
 				_putchar(k % 10 + '0');
 			}
 		}
