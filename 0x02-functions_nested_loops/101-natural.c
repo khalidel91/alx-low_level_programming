@@ -9,7 +9,7 @@
  * Return: 1 mean greater & -1 mean less
  */
 
-void main()
+int  main(void)
 {
 	int sum, i;
 	sum = 0;
