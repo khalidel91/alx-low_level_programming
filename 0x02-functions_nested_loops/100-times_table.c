@@ -8,7 +8,8 @@
 void print_times_table(int n)
 {
 	int i, j, k;
-
+if (n <= 15 && n >= 0)
+{
 	for (i = 0; i < n + 1; i++)
 	{
 		for (j = 0; j < n + 1; j++)
@@ -42,5 +43,6 @@ void print_times_table(int n)
 			}
 		}
 		_putchar('\n');
+	}
 	}
 }
