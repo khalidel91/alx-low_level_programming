@@ -11,13 +11,13 @@
 
 int main(void)
 {
-	int sum, 
+	int sum, i;
 
 	for (i = 0; i < 1024; i++)
 	if (i % 3 == 0)
 		sum = sum + i;
 	else if (i % 5 == 0)
-		sum = sim + i;
+		sum = sum + i;
 	printf("%d", sum);
 
 }
