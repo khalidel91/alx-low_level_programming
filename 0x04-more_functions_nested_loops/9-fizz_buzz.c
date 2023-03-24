@@ -1,12 +1,13 @@
 #include <stdio.h>
+
 /**
- * main - print fizzfuzz
+ * main - entry Point
  *
+ * Description: FizzBuzz game
  *
- * return: it's a void
- *
+ * Return: 0 Success
  */
-void main(void)
+int main(void)
 {
 	int i;
 
@@ -26,4 +27,5 @@ void main(void)
 			}
 			printf(" ");
 		}
+return (0);
 }
