@@ -2,7 +2,6 @@
 /**
  * more_numbers - print numbers
  *
- * description: function that print more numbers
  *
  * return: it's a void
  *
