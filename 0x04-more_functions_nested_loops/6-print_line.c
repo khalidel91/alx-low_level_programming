@@ -6,7 +6,6 @@
  * return: it's a void
  *
  */
-
 void print_line(int n)
 {
 	int i = 0;
