@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 /**
  * main - print fizzfuzz
@@ -9,7 +8,7 @@
  */
 void main(void)
 {
-	int i = 0;
+	int i;
 
 		for (i = 1; i <= 100; i++)
 		{
