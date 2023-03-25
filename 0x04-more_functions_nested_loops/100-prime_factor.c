@@ -1,27 +1,23 @@
 #include <stdio.h>
 /**
- * main - print square
+ * main - EntryPoint
  *
- * Description: largest factor
- * return: always 0
+ * Description: A C program calculate the prime factor of a certain Number
  *
+ * Return: 0 Always Success
  */
 int main(void)
 {
-	long int n;
-	n=612852475143;
-	long int div=2, ans = 0, lfactor;
-	while(n!=0) {
-	if(n % div !=0)
-	div = div + 1;
-	else {
-	lfactor = n;
-	n = n / div;
-	if(n == 1) {
-	printf("%ld\n", lfactor);
-	ans = 1;
-	break;
-	}
-	}
-	}
+long int num = 612852475143;
+long int i;
+
+for (i = 2; i < num; i++)
+{
+while (num % i == 0)
+num = num / i;
+}
+
+printf("%ld\n", num);
+
+return (0);
 }
