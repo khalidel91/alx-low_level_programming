@@ -6,14 +6,6 @@
  * return: always 0
  *
  */
-#include <stdio.h>
-/**
- * main - print square
- *
- * Description: largest factor
- * return: always 0
- *
- */
 int main(void)
 {
 	long int n;
