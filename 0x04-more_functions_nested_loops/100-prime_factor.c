@@ -16,34 +16,20 @@
  */
 int main(void)
 {
-        long int number = 612852475;
-        int is_Prime(long int p)
-        {
-        if (p <= 1)
-        {
-        return (0);
-        }
-        for (long int i = 2; i <= p / 2; i++)
-        {
-                if (p % i == 0)
-                {
-                return (0);
-                }
-        }
-        return (1);
-        }
-
-
-        for (long int i = number / 2; i >= 2; i--)
-        {
- if (number % i == 0)
-        {
-        if (is_Prime(i))
-        {
-                printf("%ld\n", i);
-                break;
-        }
-        }
-        }
-        return (0);
+	long int n;
+	n=3453;
+	long int div=2, ans = 0, lfactor;
+	while(n!=0) {
+	if(n % div !=0)
+	div = div + 1;
+	else {
+	lfactor = n;
+	n = n / div;
+	if(n == 1) {
+	printf("%ld\n", lfactor);
+	ans = 1;
+	break;
+	}
+	}
+	}
 }
