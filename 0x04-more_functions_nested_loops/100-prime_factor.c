@@ -17,7 +17,7 @@
 int main(void)
 {
 	long int n;
-	n=3453;
+	n=612852475143;
 	long int div=2, ans = 0, lfactor;
 	while(n!=0) {
 	if(n % div !=0)
