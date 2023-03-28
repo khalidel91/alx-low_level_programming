@@ -1,16 +1,15 @@
 #include "main.h"
 /**
- * print_numbers - print numbers
+ * reset_to_98 - print numbers
  *
- * description: function that print numbers from 0 to 9
+ * description: reset to n
  *
- *
+ * @n: pointer
  *
  */
 
 void reset_to_98(int *n)
 {
-	*n == 98;
+	*n = 98;
 	putchar('\n');
 }
-
