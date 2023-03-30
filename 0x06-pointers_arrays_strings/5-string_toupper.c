@@ -3,20 +3,20 @@
 /**
  * *string_toupper - compare 2 strings
  *
- * @char: string
+ * @s: string
  *
  * Return: upercase string
  */
-char *string_toupper(char *str)
+char *string_toupper(char *s)
 {
 
-	while (*str != '\0')
+	while (*s != '\0')
 	{
-		if (*str <= 122 && *str >= 97)
+		if (*s <= 122 && *s >= 97)
 		{
-			*str = *str - 32;
-			str++;
+			*s = *s - 32;
+			s++;
 		}
 	}
-return (*str);
+return (*s);
 }
