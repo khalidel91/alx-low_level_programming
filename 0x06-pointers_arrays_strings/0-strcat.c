@@ -1,11 +1,11 @@
 #include "main.h"
 #include <string.h>
 /**
- * puts_half - prints half of a string
+ * *_strcat - prints half of a string
  *
- * @str: string input
- *
- * Return: Noting it's void
+ * @dest: string input
+ * @src: second string
+ * Return: concatenate
  */
 char *_strcat(char *dest, char *src)
 {
