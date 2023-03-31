@@ -9,13 +9,14 @@
  */
 char *string_toupper(char *s)
 {
+	int i = 0;
 
-	while (*s != '\0')
+	while (*(s + i) != '\0')
 	{
-		if (*s <= 122 && *s >= 97)
+		if (*(s + i) <= 122 && *(s + i) >= 97)
 		{
-			*s = *s - 32;
-			s++;
+			*(s + i) -= 32;
+			i++;
 		}
 	}
 return (s);
