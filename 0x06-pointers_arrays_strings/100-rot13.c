@@ -20,6 +20,7 @@ char *rot13(char *s)
 			if (T1[j] == *(s + i))
 			{
 			*(s + i) = T2[j];
+			break;
 			}
 		}
 		i++;
