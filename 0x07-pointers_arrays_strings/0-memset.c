@@ -1,29 +1,19 @@
 #include "main.h"
 #include <string.h>
 /**
- * *rot13 - leet
+ * *_memset - prints half of a string
  *
- * @s: string
- *
- * Return: leet string
+ * @s: string input
+ * @b: char
+ * Return: return string
  */
-char *rot13(char *s)
+char *_memset(char *s, char b, unsigned int n)
 {
-	int i = 0, j;
-	char T1[] = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
-	char T2[] = "nNoOpPqQrRsStTuUvVwWxXyYzZaAbBcCdDeEfFgGhHiIjJkKlLmM";
+        int i;
 
-	while (*(s + i) != '\0')
-	{
-		for (j = 0; j < 52; j++)
-		{
-			if (T1[j] == *(s + i))
-			{
-			*(s + i) = T2[j];
-			break;
-			}
-		}
-		i++;
-	}
-return (s);
+        for (i = 0; i < n; i++)
+        {
+                *(s + i) = b;
+        }
+        return (s);
 }
