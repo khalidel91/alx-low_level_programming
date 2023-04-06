@@ -1,16 +1,16 @@
 #include "main.h"
 /**
- * _void _print_rev_recursion - prints half of a string
+ * _puts_recursion - prints half of a string
  *
  * @s: string input
  * Return: return string
  */
 
-void _print_rev_recursion(char *s)
+void _puts_recursion(char *s)
 {
 	if (*s == '\0')
 	{
-		_putchar('\n');
+		_putchar('\n'_puts_recursion);
 		return;
 	}
 	_putchar(s[0]);
