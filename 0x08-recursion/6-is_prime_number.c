@@ -16,7 +16,7 @@ int prime(int i, int n)
 	}
 	if (n % i == 0)
 	{
-	return (-1);
+	return (0);
 	}
 
 	return (prime(i + 1, n));
@@ -33,11 +33,11 @@ int is_prime_number(int n)
 {
 	if (n == 0)
 	{
-	return (-1);
+	return (0);
 	}
 	if (n == 1)
 	{
-		return (-1);
+		return (1);
 	}
 	return (prime(1, n));
 }
