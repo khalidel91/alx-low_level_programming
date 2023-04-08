@@ -12,6 +12,8 @@ int _strlen(char *s)
 {
 	if (*s != '\0')
 	return (1 + _strlen(s + 1));
+
+return (0);
 }
 
 /**
@@ -44,5 +46,5 @@ int is_palindrome(char *s)
 
 {
 
-	return (ispal(s, 0, _strelen(s)));
+	return (ispal(s, 0, _strlen(s)));
 }
