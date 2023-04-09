@@ -16,14 +16,16 @@ int checkstrs(char *s1, char *s2, int i, int j)
 		return (checkstrs(s1, s2, i + 1, j + 1));
 	if (s1[i] == '\0' && s2[j] == '*')
 		return (checkstrs(s1, s2, i, j + 1));
-	if (s2[j] == '*')
-		return (checkstrs(s1, s2, i, j + 1));
+	if (s2[j] == '*' && s1[i + 1] != s[i + 1])
+		return (checkstrs(s1, s2, i + 1, j));
+	if (s2[j] == '*' && s1[i + 1] == s[i + 1])
+		return (checkstrs(s1, s2, i + 1, j + 1));
 	return (0);
 }
 
 
 /**
- * wilscmp - prime
+ * wildcmp - prime
  * @s1: string input
  * @s2: string input
  * Return:  1 if strings are identical 0 otherwize
