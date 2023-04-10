@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <libmy.a>
+#include <stdlib.h>
 /**
 * main - main function
 * @argc: argc
@@ -15,7 +15,7 @@ int main(int argc, char **argv)
 		if argc == 3
 		{
 
-			res = _atoi(argv[1]) * _atoi(argv[2]);
+			res = atoi(argv[1]) * atoi(argv[2]);
 			printf("%d\n", res);
 			i++;
 		}
