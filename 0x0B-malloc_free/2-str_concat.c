@@ -1,30 +1,34 @@
 #include "main.h"
 #include <stdlib.h>
 /**
-* alloc_grid - concatenate function
-* @width: dim1
-* @height: dim2
+* str_concat - concatenate function
+* @s1: input string 1
+* @s2: input string 2
 *
-* Return: 2 dimensional array
+* Return:concatenates 2 strings
 */
 
-int **alloc_grid(int width, int height)
+char *str_concat(char *s1, char *s2)
 {
-	int **grid;
-	int i, j;
+	char *concat;
+	int i, len1 = 0, len2 = 0;
 
-	if (width <= 0 || height <= 0)
+
+	while (s1[len1] != '\0')
+		len1++;
+
+	while (s2[len2] != '\0')
+		len2++;
+	len2 += 1;
+
+	concat = (char *)malloc((sizeof(char) * (len1 + len2)));
+	if (concat == NULL)
 		return (NULL);
 
-	grid = (int **)malloc((sizeof(int) * width * height)
+	for (i = 0; i < len1; i++)
+		concat[i] = s1[i];
+	for (i = len1; i < (len1 + len2); i++)
+		concat[i] = s2[i - len1];
 
-	for (i = 0; i < width; i++)
-	{
-		for (j = 0; j < height; j++)
-		{
-		grid[i][j] == 0;
-		}
-	}
-
-	return (grid);
+	return (concat);
 }
