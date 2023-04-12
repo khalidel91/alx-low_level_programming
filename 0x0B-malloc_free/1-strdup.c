@@ -3,7 +3,6 @@
 /**
 * _strdup - function that creates array
 * @str: input string
-* @c: initializing charachter
 *
 * Return: array
 */
