@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdlib.h>
 /**
-* _calloc - function allocate array 
+* _calloc - function allocate array
 * @nmemb: input
-* @size: size input 
+* @size: size input
 *
 * Return: nconcatenated string
 */
