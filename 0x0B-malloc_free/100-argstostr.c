@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
 /**
 * argstostr - concatenate function
 * @ac: input argc
