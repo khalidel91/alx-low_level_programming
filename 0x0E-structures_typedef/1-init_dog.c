@@ -1,5 +1,5 @@
-#include "main.h"
-#include <string.h>
+#include "dog.h"
+#include <stdio.h>
 /*
  * init_dog - intialise structure
  *
