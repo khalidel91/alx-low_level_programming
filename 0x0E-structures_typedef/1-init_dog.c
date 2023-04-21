@@ -1,6 +1,6 @@
 #include "dog.h"
 #include <stdio.h>
-/*
+/**
  * init_dog - intialise structure
  *
  *@d: array
@@ -8,7 +8,7 @@
  *@age: age
  *@owner: owner
  *
- * 
+ *
  */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
