@@ -4,6 +4,7 @@
 /**
 * add_node - first function to print lists
 * @str: pointer to the first list
+* @head: pointer to first element
 * Return: number of nodes
 */
 
