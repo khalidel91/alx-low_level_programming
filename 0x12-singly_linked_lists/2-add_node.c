@@ -1,8 +1,9 @@
 #include "lists.h"
+#include <string.h>
 
 /**
-* list_len - first function to print lists
-* @h: pointer to the first list
+* add_node - first function to print lists
+* @str: pointer to the first list
 * Return: number of nodes
 */
 
