@@ -1,16 +1,25 @@
 section .data
-message db 'Hello, Holberton', 0Ah ; message to be printed
+    message db 'Hello, Holberton', 0Ah ; message to be printed
+    format db '%s', 0Ah, 0 ; format string for printf
 
 section .text
-global _start
+    global main
 
-_start:
-; call printf function to print message
-mov rdi, message    ; first argument: format string
-xor rax, rax        ; clear rax for variadic function call
-call printf         ; call printf function
+extern printf
 
-; exit program
-xor rdi, rdi        ; set exit status to 0
-mov rax, 60         ; syscall number for exit
-syscall             ; call the exit system call
+main:
+    ; set up stack frame
+    push rbp
+    mov rbp, rsp
+
+    ; call printf function to print message
+    mov rsi, message    ; second argument: message string
+    mov rdi, format     ; first argument: format string
+    xor eax, eax        ; clear eax for variadic function call
+    call printf         ; call printf function
+
+    ; clean up stack and return
+    mov rsp, rbp
+    pop rbp
+    xor eax, eax        ; return value of 0
+    ret
