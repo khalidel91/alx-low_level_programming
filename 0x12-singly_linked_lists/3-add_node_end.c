@@ -16,7 +16,7 @@ list = malloc(sizeof(list_t));
 if (list == NULL)
 return (NULL);
 list->str = strdup(str);
-for (i = 0; str[count]; i++)
+for (i = 0; str[i]; i++)
 {};
 list->len = i;
 list->next = NULL;
