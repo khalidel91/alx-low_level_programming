@@ -17,7 +17,7 @@ newlist = malloc(sizeof(list_t));
 if (newlist == NULL)
 return (NULL);
 newlist->str = strdup(str);
-for (i = 0; str[i] != NULL; i++)
+for (i = 0; str[i]; i++)
 {};
 newlist->len = i;
 newlist->next = *head;
