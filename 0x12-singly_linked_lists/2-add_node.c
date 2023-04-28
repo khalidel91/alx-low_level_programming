@@ -24,4 +24,3 @@ newlist->next = *head;
 *head = newlist;
 return (newlist);
 }
-}
