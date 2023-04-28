@@ -5,6 +5,13 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+/**
+ * struct list - main function
+ *
+ * @str: char
+ * @len: len
+ * @next: pointer to the next list
+ */
 struct list
 {
 char *str;
