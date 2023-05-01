@@ -13,7 +13,7 @@ while (h)
 if (!h->str)
 printf("[%u] (nil)\n", 0);
 else
-printf("[%u] %s\n", h->len, h->str);
+printf("%d\n", h->n);
 h = h->next;
 count++;
 }
