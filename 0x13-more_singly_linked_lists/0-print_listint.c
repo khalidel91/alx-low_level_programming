@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-* print_listnt - first function to print lists
+* print_listint - first function to print lists
 * @h: pointer to the first list
 * Return: number of nodes
 */
