@@ -2,9 +2,8 @@
 #include <stdio.h>
 
 /**
-* get_nodeint_at_index - first function to print lists
+* sum_listint - first function to print lists
 * @head: pointer to the first list
-* @index: index
 * Return: number of nodes
 */
 int sum_listint(listint_t *head)
