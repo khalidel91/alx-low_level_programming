@@ -1,19 +1,27 @@
 #include "main.h"
 #include <string.h>
 /**
- * *_memset - prints half of a string
+ * *_strcat - prints half of a string
  *
- * @s: string input
- * @b: char
- * Return: return string
+ * @dest: string input
+ * @src: second string
+ * Return: concatenate
  */
-char *_memset(char *s, char b, unsigned int n)
+char *_strcat(char *dest, char *src)
 {
-	int i;
+	char *con = dest;
 
-	for (i = 0; i < n; i++)
+	while (*dest != '\0')
 	{
-		*(s + i) = b;
+		dest++;
 	}
-	return (s);
+
+	while (*src != '\0')
+	{
+		*dest = *src;
+		dest++;
+		src++;
+	}
+	*dest = '\0';
+	return (con);
 }
