@@ -2,13 +2,14 @@
 #include <stdio.h>
 
 /**
-* free_listint2222222222222222222222 - first function to print lists
+* free_listint2 - first function to print lists
 * @head: pointer to the first list
 * Return: number of nodes
 */
 void free_listint2(listint_t **head)
 {
 	listint_t *tmp = *head;
+
 	if (head == NULL)
 		return;
 	while (*head)
