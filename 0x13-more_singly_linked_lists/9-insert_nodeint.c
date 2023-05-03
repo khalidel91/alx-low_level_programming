@@ -2,9 +2,10 @@
 #include <stdio.h>
 
 /**
-* get_nodeint_at_index - first function to print lists
+* insert_nodeint_at_index - first function to print lists
 * @head: pointer to the first list
-* @index: index
+* @idx: index
+* @n: int n
 * Return: number of nodes
 */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
@@ -22,13 +23,14 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		*head = new;
 		return (new);
 	}
-	else while (idx != 0)
-	{
+	else 
+		while ((idx + 1) != 0)
+		{
 		tmp = tmp->next;
 		if (tmp == NULL)
 			return (NULL);
 		idx--;
-	}
+		}
 	new->next = tmp->next;
 	tmp->next = new;
 
